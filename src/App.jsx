@@ -1,6 +1,8 @@
 import { useState } from "react";
-
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
+import Home from "./components/Home/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +10,9 @@ function App() {
   return (
     <>
       <h1 className="h1 bg-green-600 p-4">React_Router</h1>
+      <Header />
+      <Home/>
+      <Footer />
     </>
   );
 }
